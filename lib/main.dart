@@ -105,25 +105,43 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Container(
+              width: 300,
+              height: 200,
+              child: Image(
+                  image: NetworkImage('https://www.logodesign.net/images/how-to-design-social-media-app-logo-icon-tutorial-header.jpg')
+              ),
+            ),
             Text(
               'App Logo - Screen No. 1',
             ),
-            Text(
-              'My Demo App - Screen No. 1',
-              style: TextStyle(
-                fontSize: 20,
-                fontStyle: FontStyle.italic,
-                fontWeight: FontWeight.bold,
-                color: Colors.red,
-                backgroundColor: Colors.green
-              )
+            Container(
+              width: 350,
+              margin: EdgeInsets.all(10),
+              alignment: Alignment.center,
+              child: Text(
+                'My Demo App - Screen No. 1',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red,
+                  backgroundColor: Colors.green
+                ),
+              ),
             ),
-            Text(
-              'You have pushed the button this many times!!!',
+            Container(
+              child: Text(
+                'You have pushed the button this many times!!!',
+              ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            Container(
+              margin: EdgeInsets.only(bottom: 20, top: 10),
+              color: Colors.blue,
+              child: Text(
+                'Current Click: ${_counter * 2}',
+                style: Theme.of(context).textTheme.headline4,
+              ),
             ),
             TextButton(
               onPressed: () {
