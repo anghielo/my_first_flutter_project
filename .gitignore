@@ -657,7 +657,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+#turn back on for python to ignore
+#lib/
 lib64/
 parts/
 sdist/
