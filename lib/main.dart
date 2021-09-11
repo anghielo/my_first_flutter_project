@@ -1,6 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart'; // Material design
+import 'package:my_first_flutter_project/column_demo.dart';
+import 'package:my_first_flutter_project/row_demo.dart';
 import 'second_page.dart';
 import 'third_page.dart';
 
@@ -145,7 +147,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             TextButton(
               onPressed: () {
-                //todo code
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ColumnDemoPage()),
+                );
               },
               child: Text(
                 'Confirm'
@@ -155,7 +160,13 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => RowDemoPage(),
+            ),
+          );
+        },
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
