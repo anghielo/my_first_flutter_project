@@ -904,3 +904,4 @@ venv.bak/
 # End of https://www.gitignore.io/api/c++,java,csharp,python,eclipse,android,intellij,intellij+all,visualstudio,androidstudio,visualstudiocode
 
 desktop.ini
+/.dart_tool/flutter_build/
