@@ -51,8 +51,9 @@ captures/
 .idea/caches
 # Comment next line if keeping position of elements in Navigation Editor is relevant for you
 .idea/navEditor.xml
-.packages
-pubspec.lock
+web/.packages
+web/pubspec.lock
+.dart_tool/
 
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
